@@ -3,6 +3,8 @@ import { win, loser, resetResult } from "./funcionalidad.js";
 // variables
 export const displayCPU = document.getElementById('displayCPU');
 export const displayPlayer = document.getElementById('displayPlayer');
+export const modal = document.querySelector('.modal');
+export const modalWin = document.getElementById('resultWin');
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
@@ -16,18 +18,18 @@ let cpuSelect;
 // Colaca los nombres a los elementos seleccionados 
 function nameElement(num, num2) {
   if (num === 0) {
-    cpu.innerHTML = '👊';
+    cpu.innerHTML = '👊🏻';
   } else if (num === 1) {
-    cpu.innerHTML = '🖐';
+    cpu.innerHTML = '🖐🏻';
   } else if (num === 2) {
-    cpu.innerHTML = '✌';
+    cpu.innerHTML = '✌🏻';
   }
   if (num2 === 0) {
-    player.innerHTML = '👊';
+    player.innerHTML = '👊🏻';
   } else if (num2 === 1) {
-    player.innerHTML = '🖐';
+    player.innerHTML = '🖐🏻';
   } else if (num2 === 2) {
-    player.innerHTML = '✌';
+    player.innerHTML = '✌🏻';
   }
 }
 
@@ -63,4 +65,5 @@ reset.addEventListener('click', () => {
   resetResult()
   cpu.innerHTML = '❔';
   player.innerHTML = '❔';
+  modal.classList.remove("active")
 })

@@ -1,10 +1,10 @@
-import {resetResult} from './funcionalidad.js';
+import { modal, modalWin } from './app.js';
 export function results(cpu, player) {
-  if(cpu === 5){
-    // alert('la maquina ha ganado');
-    resetResult()
-  }else if(player === 5){
-    // alert('usted ha ganado');
-    resetResult()
+  if (cpu === 5) {
+    modal.classList.add("active");
+    modalWin.innerHTML = "lost";
+  } else if (player === 5) {
+    modal.classList.add("active");
+    modalWin.innerHTML = "won";
   }
 }
