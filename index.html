@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="text"><h3>The first one to reach 5 points wins the game</h3></div>
+        <div class="diplay">
+            <div class="cpuResult">
+                <h1 id="cpu">❔</h1>
+                <h2>CPU Player: <span id="displayCPU">0</span></h2>
+            </div>
+            <div class="playerResult">
+                <h1 id="player">❔</h1>
+                <h2>Player: <span id="displayPlayer">0</span></h2>
+            </div>
+        </div>
+        <div class="player">
+            <button class="btn-player" id="rock" type="button">
+                <h3>👊</h3>
+            </button>
+            <button class="btn-player" id="paper" type="button">
+                <h3>🖐</h3>
+            </button>
+            <button class="btn-player" id="scissors" type="button">
+                <h3>✌</h3>
+            </button>
+        </div>
+        <div class="modal">
+            <h1 class="resultWin">win</h1>
+            <button id="reset">Reset game</button>
+        </div>
+        <footer>Copyright&copy; WilDev <span id="year">2023 </span><i class="fa-brands fa-github"></i></footer>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="https://kit.fontawesome.com/bc3dfab8e3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
